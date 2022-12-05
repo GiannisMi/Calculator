@@ -46,13 +46,14 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 0px 3px hsl(0, 0%, 8%), 0px 5px 0px 3px hsl(0, 0%, 8%),
     0px 20px 20px 3px #0003;
-  color: #bdc3c7;
+  color: #ffffff;
   padding-top: 20px;
   margin: 10px;
   height: 75px;
   border-radius: 20px;
   text-align: center;
 }
+
 .buttons > div:nth-child(1),
 .buttons > div:nth-child(2),
 .buttons > div:nth-child(3) {
@@ -83,3 +84,21 @@ body {
 .button:active:before {
   top: 0;
 }
+
+.change {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(209, 209, 209, 0.700717787114846) 100%
+  );
+}
+.icon-change {
+  position: absolute;
+  margin: 20px;
+  background-image: url(./icons/icons8-smiling-sun-24.png);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
