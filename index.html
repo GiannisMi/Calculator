@@ -9,32 +9,34 @@
   </head>
   <body>
     <div class="container">
+      <div class="clipPath"></div>
       <div class="display-container">
-        <div class="change-theme"></div>
-        <div id="display-after"></div>
-        <div id="display"></div>
+        <button class="change-theme"></button>
+        <div data-previous="" id="display-after"></div>
+        <div data-main="" id="display"></div>
       </div>
+
       <div class="buttons">
-        <div class="button">C</div>
-        <div class="button">/</div>
-        <div class="button">*</div>
-        <div class="button">&larr;</div>
-        <div class="button">7</div>
-        <div class="button">8</div>
-        <div class="button">9</div>
-        <div class="button">-</div>
-        <div class="button">4</div>
-        <div class="button">5</div>
-        <div class="button">6</div>
-        <div class="button">+</div>
-        <div class="button">1</div>
-        <div class="button">2</div>
-        <div class="button">3</div>
-        <div class="button">.</div>
-        <div class="button">(</div>
-        <div class="button">0</div>
-        <div class="button">)</div>
-        <div id="equal" class="button">=</div>
+        <button data-clean="">C</button>
+        <button data-operation="">/</button>
+        <button data-operation="">*</button>
+        <button data-delete="">&larr;</button>
+        <button data-number="">7</button>
+        <button data-number="">8</button>
+        <button data-number="">9</button>
+        <button data-operation="">-</button>
+        <button data-number="">4</button>
+        <button data-number="">5</button>
+        <button data-number="">6</button>
+        <button data-operation="">+</button>
+        <button data-number="">1</button>
+        <button data-number="">2</button>
+        <button data-number="">3</button>
+        <button data-number="">,</button>
+        <button>(</button>
+        <button data-number="">0</button>
+        <button>)</button>
+        <button data-equals="" id="equal">=</button>
       </div>
     </div>
     <script src="./index.js"></script>
