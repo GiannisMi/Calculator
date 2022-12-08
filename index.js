@@ -83,6 +83,16 @@ class Calculator {
       this.previousText.innerText = "";
     }
   }
+
+  changeTheme() {
+    mainText.classList.toggle("text");
+    previousText.classList.toggle("text");
+    circle.classList.toggle("active");
+    theme.classList.toggle("icon-change");
+    buttons.forEach((button) => {
+      button.classList.toggle("dark-mode");
+    });
+  }
 }
 
 const numberButtons = document.querySelectorAll("[data-number]");
@@ -104,6 +114,7 @@ numberButtons.forEach((button) => {
     calculator.updateDisplay();
   });
 });
+
 operationButtons.forEach((button) => {
   button.addEventListener("click", () => {
     calculator.chooseOperation(button.innerText);
@@ -115,21 +126,17 @@ equalButton.addEventListener("click", (button) => {
   calculator.compute();
   calculator.updateDisplay();
 });
+
 allClearButton.addEventListener("click", (button) => {
   calculator.clear();
   calculator.updateDisplay();
 });
+
 deleteButton.addEventListener("click", (button) => {
   calculator.delete();
   calculator.updateDisplay();
 });
 
 theme.addEventListener("click", () => {
-  mainText.classList.toggle("text");
-  previousText.classList.toggle("text");
-  circle.classList.toggle("active");
-  theme.classList.toggle("icon-change");
-  buttons.forEach((button) => {
-    button.classList.toggle("dark-mode");
-  });
+  calculator.changeTheme();
 });
